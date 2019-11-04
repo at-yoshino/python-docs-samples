@@ -81,7 +81,7 @@ def transcribe_file(speech_file, language, sample_rate = RATE, speech_contexts =
         # First alternative is the most probable result
         alternative = result.alternatives[0]
         print(u"Transcript: {}".format(alternative.transcript))
-        # os.remove(WAVE_OUTPUT_FILENAME)
+        os.remove(WAVE_OUTPUT_FILENAME)
 
 if __name__ == '__main__':
     recording()
